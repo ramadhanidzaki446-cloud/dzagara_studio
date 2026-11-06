@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louiz Studio - Custom Acrylic Keychain Salatiga</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter & Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                            dark: '#1e102d',
+                            accent: '#ff6584'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf7fc;
+        }
+        .wix-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .anime-gradient {
+            background: linear-gradient(135deg, #a21caf 0%, #c026d3 50%, #ff6584 100%);
+        }
+        .anime-gradient-subtle {
+            background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 50%, #ffe4e6 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d946ef;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+    <!-- 1. SIMULASI DOMAIN & HTTPS SSL INDICATOR BAR -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-1.5 px-4 flex items-center justify-between border-b border-slate-800 sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                <i class="fa-solid font-bold fa-lock text-[10px] mr-1"></i> HTTPS SECURE
+            </span>
+            <span class="text-slate-400 hidden sm:inline">|</span>
+            <span class="font-mono text-slate-300 hidden sm:inline">https://louiz-acrylic.wixsite.com/official</span>
+        </div>
+        <div class="flex items-center space-x-4 text-[11px]">
+            <span><i class="fa-solid fa-location-dot text-brand-400 mr-1"></i> Salatiga, Jawa Tengah</span>
+            <span class="hidden md:inline"><i class="fa-solid fa-certificate text-amber-400 mr-1"></i> NIB Registered</span>
+        </div>
+    </div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="wix-glass sticky top-[33px] z-40 border-b border-purple-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo Toko -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-2xl anime-gradient flex items-center justify-center text-white shadow-md shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-key text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-700 via-brand-500 to-brand-accent">LOUIZ STUDIO</span>
+                        <span class="block text-[10px] font-semibold text-brand-600 tracking-widest uppercase">Acrylic Keychain Craft</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                    <a href="#beranda" class="text-brand-600 font-semibold hover:text-brand-700 transition">Beranda</a>
+                    <a href="#produk" class="hover:text-brand-600 transition">Produk & Katalog</a>
+                    <a href="#tentang" class="hover:text-brand-600 transition">Tentang Kami</a>
+                    <a href="#ulasan" class="hover:text-brand-600 transition">Ulasan</a>
+                    <a href="#kebijakan" class="hover:text-brand-600 transition">Kebijakan</a>
+                    <a href="#kontak" class="hover:text-brand-600 transition">Kontak</a>
+                </nav>
+
+                <!-- Actions: Search & Cart -->
+                <div class="flex items-center space-x-4">
+                    <button onclick="toggleCartModal()" class="relative p-2.5 text-slate-700 hover:text-brand-600 bg-purple-50 hover:bg-purple-100 rounded-full transition">
+                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 bg-brand-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md">0</span>
+                    </button>
+                    
+                    <a href="https://wa.me/6281234567890?text=Halo%20Louiz%20Studio,%20saya%20ingin%20tanya%20custom%20keychain" target="_blank" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs transition shadow-md shadow-emerald-500/20">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Chat Admin</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 hover:text-brand-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-purple-100 bg-white/95 px-4 pt-3 pb-6 space-y-3 font-medium text-sm">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block py-2 text-brand-600 font-semibold border-b border-purple-50">Beranda</a>
+            <a href="#produk" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-600 border-b border-purple-50">Katalog Produk</a>
+            <a href="#tentang" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-600 border-b border-purple-50">Tentang Kami</a>
+            <a href="#ulasan" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-600 border-b border-purple-50">Ulasan Pelanggan</a>
+            <a href="#kebijakan" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-600 border-b border-purple-50">Kebijakan Toko</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-600 border-b border-purple-50">Kontak Usaha</a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-center space-x-2 w-full mt-4 py-3 rounded-xl bg-emerald-500 text-white font-bold text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Konsultasi Via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow">
+        
+        <!-- HERO SECTION -->
+        <section id="beranda" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+            <div class="absolute inset-0 anime-gradient-subtle opacity-70 -z-10"></div>
+            <!-- Decorative Blobs -->
+            <div class="absolute top-10 right-10 w-72 h-72 bg-brand-300/30 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-10 left-10 w-80 h-80 bg-purple-300/30 rounded-full blur-3xl -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-full shadow-sm border border-purple-200 text-xs font-semibold text-brand-700">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                            <span>Spesialis Keychain Akrilik Custom Salatiga</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+                            Bawa Karakter Favoritmu Dalam <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-brand-500 to-brand-accent">Akrilik Premium</span>
+                        </h1>
+                        
+                        <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Cetak gantungan kunci akrilik custom desain suka-suka! Presisi potong laser, warna UV print tajam 2 sisi, anti pudar & kokoh. Estimasi pengerjaan cepat 2-3 hari dari Salatiga.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#produk" class="w-full sm:w-auto px-8 py-4 rounded-2xl anime-gradient text-white font-bold text-center shadow-lg shadow-brand-500/30 hover:opacity-95 transition transform hover:-translate-y-0.5">
+                                <i class="fa-solid fa-bag-shopping mr-2"></i> Lihat Katalog Produk
+                            </a>
+                            <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold border border-slate-200 text-center shadow-sm transition">
+                                Pelajari Tentang Kami
+                            </a>
+                        </div>
+
+                        <!-- Highlights info -->
+                        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-purple-200/60 max-w-lg mx-auto lg:mx-0 text-center">
+                            <div>
+                                <span class="block text-2xl font-extrabold text-brand-700">3 mm</span>
+                                <span class="text-xs text-slate-500 font-medium">Bahan Akrilik HD</span>
+                            </div>
+                            <div>
+                                <span class="block text-2xl font-extrabold text-brand-700">2-3 Hari</span>
+                                <span class="text-xs text-slate-500 font-medium">Proses Cepat</span>
+                            </div>
+                            <div>
+                                <span class="block text-2xl font-extrabold text-brand-700">4.9/5 ★</span>
+                                <span class="text-xs text-slate-500 font-medium">Kepuasan Pelanggan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Banner Hero Inspired by Anime Aesthetics -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="w-full h-[400px] sm:h-[480px] rounded-3xl bg-gradient-to-tr from-brand-600 via-purple-600 to-pink-500 p-3 shadow-2xl transform rotate-1 hover:rotate-0 transition duration-500">
+                                <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden relative flex flex-col justify-between p-6">
+                                    <!-- Overlay SVG Illustration representation of Acrylic Keychain -->
+                                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#d946ef_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                                    
+                                    <!-- Top badge -->
+                                    <div class="flex justify-between items-center z-10">
+                                        <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-xs font-semibold">
+                                            <i class="fa-solid fa-sparkles text-amber-300 mr-1"></i> Best Seller
+                                        </span>
+                                        <span class="text-white/80 font-mono text-xs">LOUIZ-ACRYLIC-2026</span>
+                                    </div>
+
+                                    <!-- Center Anime Chibi Illustration Placeholder (SVG) -->
+                                    <div class="my-auto text-center z-10 py-6">
+                                        <div class="w-44 h-44 mx-auto rounded-full bg-purple-500/20 backdrop-blur-md border-4 border-brand-400/50 flex items-center justify-center relative shadow-inner">
+                                            <i class="fa-solid fa-ghost text-7xl text-pink-300 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] animate-bounce" style="animation-duration: 3s;"></i>
+                                            <!-- Keychain ring representation -->
+                                            <div class="absolute -top-6 w-8 h-8 rounded-full border-4 border-slate-300 bg-slate-700"></div>
+                                        </div>
+                                        <h3 class="mt-4 text-xl font-bold text-white tracking-wide">Akrilik Chibi Anime Custom</h3>
+                                        <p class="text-xs text-purple-200 mt-1">UV Print Double-Sided + Holographic Finish</p>
+                                    </div>
+
+                                    <!-- Bottom Info Box -->
+                                    <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 text-white flex items-center justify-between z-10">
+                                        <div>
+                                            <p class="text-[10px] text-purple-200 uppercase font-semibold">Harga Mulai</p>
+                                            <p class="text-lg font-bold">Rp 15.000 <span class="text-xs text-purple-300 font-normal">/pcs</span></p>
+                                        </div>
+                                        <a href="#produk" class="px-3.5 py-1.5 rounded-lg bg-white text-brand-800 text-xs font-bold hover:bg-brand-50 transition">
+                                            Pesan Sekarang
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST BADGES -->
+        <section class="bg-white py-6 border-y border-purple-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="flex items-center justify-center space-x-3 p-2">
+                        <i class="fa-solid fa-truck-fast text-2xl text-brand-500"></i>
+                        <div class="text-left">
+                            <h4 class="text-xs font-bold text-slate-800">Kirim Seluruh Indonesia</h4>
+                            <p class="text-[11px] text-slate-500">Ekspedisi J&T, JNE, POS</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3 p-2">
+                        <i class="fa-solid fa-qrcode text-2xl text-brand-500"></i>
+                        <div class="text-left">
+                            <h4 class="text-xs font-bold text-slate-800">Pembayaran QRIS & Bank</h4>
+                            <p class="text-[11px] text-slate-500">Instant & Verifikasi Otomatis</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3 p-2">
+                        <i class="fa-solid fa-shield-halved text-2xl text-brand-500"></i>
+                        <div class="text-left">
+                            <h4 class="text-xs font-bold text-slate-800">Garansi Retur 100%</h4>
+                            <p class="text-[11px] text-slate-500">Jika Akrilik Cacat / Patah</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3 p-2">
+                        <i class="fa-solid fa-file-contract text-2xl text-brand-500"></i>
+                        <div class="text-left">
+                            <h4 class="text-xs font-bold text-slate-800">Terdaftar Resmi NIB</h4>
+                            <p class="text-[11px] text-slate-500">Usaha Legal & Terpercaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. KATALOG PRODUK -->
+        <section id="produk" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-extrabold text-brand-600 uppercase tracking-widest mb-2">Katalog Pilihan</h2>
+                    <p class="text-3xl font-black text-slate-900">Varian Keychain Akrilik Premium</p>
+                    <p class="text-slate-600 text-sm mt-2">Pilih varian favoritmu, sesuaikan dengan gambar karakter anime atau karya senimu sendiri.</p>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid">
+                    <!-- Dynamic Product Cards Injected Here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 & 8. TENTANG KAMI & LEGALITAS USAHA SECTION -->
+        <section id="tentang" class="py-16 bg-white border-y border-purple-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="relative rounded-3xl overflow-hidden bg-brand-900 p-8 text-white shadow-xl">
+                            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-brand-500/20 rounded-full blur-2xl"></div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-brand-500/30 text-brand-200 text-xs font-semibold mb-4 border border-brand-400/30">
+                                Profil Studio & Workshop
+                            </span>
+                            <h3 class="text-2xl font-black mb-4">Louiz Studio Creative Salatiga</h3>
+                            <p class="text-purple-200 text-sm leading-relaxed mb-6">
+                                Didirikan sejak 2022 di Salatiga, Jawa Tengah, Louiz Studio memfokuskan diri dalam pembuatan souvenir custom berbasis akrilik bermutu tinggi. Kami menggunakan mesin cutting laser berakurasi tinggi serta mesin cetak UV Jepang untuk menghasilkan hasil warna vibrant dan detail luar biasa.
+                            </p>
+                            
+                            <div class="bg-white/10 rounded-2xl p-4 backdrop-blur-sm border border-white/10 space-y-3 text-xs">
+                                <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                                    <span class="text-purple-200"><i class="fa-solid fa-location-dot mr-2 text-brand-400"></i> Lokasi Usaha:</span>
+                                    <span class="font-bold">Salatiga, Jawa Tengah, Indonesia</span>
+                                </div>
+                                <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                                    <span class="text-purple-200"><i class="fa-solid fa-certificate mr-2 text-amber-400"></i> Legalitas NIB (Dummy):</span>
+                                    <span class="font-mono font-bold text-amber-300">9120001234567</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-purple-200"><i class="fa-solid fa-clock mr-2 text-emerald-400"></i> Jam Operasional:</span>
+                                    <span class="font-bold">Senin - Sabtu (08.00 - 17.00 WIB)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-black text-slate-900">Mengapa Memilih Keychain Akrilik Dari Louiz Studio?</h2>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-purple-50/50 border border-purple-100">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center flex-shrink-0 font-bold">
+                                    1
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base">Material Acrylic Grade A (3mm)</h4>
+                                    <p class="text-slate-600 text-xs mt-1">Akrilik bening berkualitas tinggi yang jernih, tidak mudah buram, serta potongan tepi halus aman di tangan.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-purple-50/50 border border-purple-100">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center flex-shrink-0 font-bold">
+                                    2
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base">Cetak UV Flatbed 2 Sisi (Double-Sided)</h4>
+                                    <p class="text-slate-600 text-xs mt-1">Hasil cetakan terlindung di dalam lapisan akrilik (sandwich method) sehingga anti gores & warna tidak cepat pudar.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-purple-50/50 border border-purple-100">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center flex-shrink-0 font-bold">
+                                    3
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-base">Tanpa Minimal Order</h4>
+                                    <p class="text-slate-600 text-xs mt-1">Melayani pemesanan satuan untuk koleksi pribadi maupun partai besar untuk event/merchandise komunitas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ULASAN PEMBELI / TESTIMONI -->
+        <section id="ulasan" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-xs font-extrabold text-brand-600 uppercase tracking-widest mb-2">Testimoni Pelanggan</h2>
+                    <p class="text-3xl font-black text-slate-900">Ulasan Nyata Pembeli</p>
+                    <p class="text-slate-600 text-sm mt-2">Ribuan gantungan kunci akrilik telah terkirim dengan aman ke seluruh Indonesia.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Review Card 1 -->
+                    <div class="bg-white p-6 rounded-3xl border border-purple-100 shadow-sm relative hover:shadow-md transition">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            "Bagus banget kak hasil cetak akriliknya! Warna chibinya tajam banget dan potongan akriliknya mulus. Pengerjaannya juga super cepat cuma 2 hari dari Salatiga."
+                        </p>
+                        <div class="flex items-center space-x-3 pt-3 border-t border-slate-100">
+                            <div class="w-9 h-9 rounded-full bg-pink-100 text-pink-600 font-bold flex items-center justify-center text-xs">
+                                AD
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-900">Anisa D.</h4>
+                                <p class="text-[10px] text-slate-400">Semarang • Pembeli Terverifikasi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="bg-white p-6 rounded-3xl border border-purple-100 shadow-sm relative hover:shadow-md transition">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            "Pesan 50 pcs buat merchandise event komunitas anime, semuanya rapi tanpa ada yang cacat. Packing bubble wrap tebal. Recommended seller banget!"
+                        </p>
+                        <div class="flex items-center space-x-3 pt-3 border-t border-slate-100">
+                            <div class="w-9 h-9 rounded-full bg-purple-100 text-purple-600 font-bold flex items-center justify-center text-xs">
+                                RZ
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-900">Rizky Pratama</h4>
+                                <p class="text-[10px] text-slate-400">Jakarta • Pembeli Terverifikasi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="bg-white p-6 rounded-3xl border border-purple-100 shadow-sm relative hover:shadow-md transition">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            "Efek Holografik rainbow-nya cantik bangeeeeet! Bikin keychain ku keliatan mahal padahal harganya sangat terjangkau. Fix bakal order lagi di Louiz Studio!"
+                        </p>
+                        <div class="flex items-center space-x-3 pt-3 border-t border-slate-100">
+                            <div class="w-9 h-9 rounded-full bg-brand-100 text-brand-600 font-bold flex items-center justify-center text-xs">
+                                FK
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-900">Fiona K.</h4>
+                                <p class="text-[10px] text-slate-400">Surabaya • Pembeli Terverifikasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 & 9. KONTAK AKTIF & SOSIAL MEDIA TERHUBUNG -->
+        <section id="kontak" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-extrabold text-brand-400 uppercase tracking-widest">Hubungi Kami</span>
+                        <h2 class="text-3xl sm:text-4xl font-black leading-tight">Siap Untuk Membuat Keychain Akrilik Impianmu?</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Tim customer care Louiz Studio Salatiga siap melayani konsultasi desain, pertanyaan cetak custom, hingga pengecekan status pesananmu secara langsung.
+                        </p>
+
+                        <div class="space-y-3 pt-2">
+                            <div class="flex items-center space-x-4 bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-slate-400 uppercase font-semibold">WhatsApp Official</p>
+                                    <a href="https://wa.me/6281234567890" target="_blank" class="text-sm font-bold hover:text-emerald-400 transition">+62 812-3456-7890</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-slate-400 uppercase font-semibold">Email Customer Support</p>
+                                    <a href="mailto:support@louiz-studio.com" class="text-sm font-bold hover:text-purple-400 transition">support@louiz-studio.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                                <div class="w-10 h-10 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-slate-400 uppercase font-semibold">Alamat Workshop</p>
+                                    <p class="text-sm font-bold">Jl. Diponegoro No. 88, Sidorejo, Kota Salatiga, Jawa Tengah 50711</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Connection Card -->
+                    <div class="lg:col-span-6 bg-gradient-to-br from-brand-900 to-purple-900 p-8 rounded-3xl border border-purple-500/30 shadow-2xl">
+                        <h3 class="text-xl font-bold mb-2">Ikuti Media Sosial Kami</h3>
+                        <p class="text-xs text-purple-200 mb-6">Dapatkan update contoh hasil cetak terbaru, promo harian, dan giveaway khusus pengikut Instagram & TikTok kami.</p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Instagram -->
+                            <a href="https://instagram.com" target="_blank" class="flex items-center space-x-3 p-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition shadow-lg">
+                                <i class="fa-brands fa-instagram text-2xl"></i>
+                                <div>
+                                    <span class="block text-xs text-purple-200 font-medium">Instagram</span>
+                                    <span class="text-sm font-extrabold">@louiz.studio</span>
+                                </div>
+                            </a>
+
+                            <!-- TikTok -->
+                            <a href="https://tiktok.com" target="_blank" class="flex items-center space-x-3 p-4 rounded-2xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition shadow-lg">
+                                <i class="fa-brands fa-tiktok text-2xl text-cyan-400"></i>
+                                <div>
+                                    <span class="block text-xs text-slate-400 font-medium">TikTok</span>
+                                    <span class="text-sm font-extrabold">@louiz.acrylic</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="mt-8 p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
+                            <span class="text-xs text-purple-200 block mb-1">Butuh bantuan cepat tentang cetak custom file?</span>
+                            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20kirim%20file%20desain%20keychain" target="_blank" class="inline-block mt-2 text-xs font-bold text-amber-300 hover:underline">
+                                <i class="fa-brands fa-whatsapp mr-1"></i> Kirim Format Desain via WA
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4 & 8. FOOTER DENGAN KEBIJAKAN TERTULIS & LEGALITAS -->
+    <footer id="kebijakan" class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Store info & NIB -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-lg anime-gradient flex items-center justify-center text-white font-bold">
+                            L
+                        </div>
+                        <span class="text-lg font-black text-white tracking-wider">LOUIZ STUDIO</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Produsen gantungan kunci akrilik custom premium berbasis di Salatiga. Presisi laser & cetak UV kualitas terbaik.
+                    </p>
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-[11px]">
+                        <span class="text-slate-400 block font-semibold">Legalitas Usaha:</span>
+                        <span class="font-mono text-amber-400 font-bold">NIB: 9120001234567</span>
+                        <span class="block text-slate-400 text-[10px]">PT Louiz Studio Kreatif Salatiga</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Kebijakan Tertulis Buttons (Modals Trigger) -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Kebijakan Toko</h4>
+                    <ul class="space-y-2.5">
+                        <li><button onclick="openPolicyModal('pengiriman')" class="hover:text-brand-400 transition">Kebijakan Pengiriman</button></li>
+                        <li><button onclick="openPolicyModal('retur')" class="hover:text-brand-400 transition">Kebijakan Retur & Refund</button></li>
+                        <li><button onclick="openPolicyModal('privasi')" class="hover:text-brand-400 transition">Kebijakan Privasi</button></li>
+                        <li><button onclick="openPolicyModal('pembayaran')" class="hover:text-brand-400 transition">Syarat & Pembayaran</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Link Cepat -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Navigasi Halaman</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#beranda" class="hover:text-brand-400 transition">Beranda Utama</a></li>
+                        <li><a href="#produk" class="hover:text-brand-400 transition">Katalog Produk Akrilik</a></li>
+                        <li><a href="#tentang" class="hover:text-brand-400 transition">Profil & Workshop Salatiga</a></li>
+                        <li><a href="#ulasan" class="hover:text-brand-400 transition">Ulasan & Rating Pembeli</a></li>
+                        <li><a href="#kontak" class="hover:text-brand-400 transition">Hubungi Customer Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Pembayaran Aman -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Pembayaran Aman</h4>
+                    <p class="text-[11px] text-slate-400 mb-3">Mendukung pembayaran digital QRIS resmi (Gopay, OVO, Dana, ShopeePay, Mobile Banking) & Transfer Bank.</p>
+                    <div class="flex flex-wrap gap-2 text-slate-300">
+                        <span class="px-2 py-1 bg-slate-900 border border-slate-800 rounded font-bold text-[10px]">QRIS</span>
+                        <span class="px-2 py-1 bg-slate-900 border border-slate-800 rounded font-bold text-[10px]">BCA</span>
+                        <span class="px-2 py-1 bg-slate-900 border border-slate-800 rounded font-bold text-[10px]">MANDIRI</span>
+                        <span class="px-2 py-1 bg-slate-900 border border-slate-800 rounded font-bold text-[10px]">BRI</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400">
+                <p>© 2026 Louiz Studio (Salatiga, Jawa Tengah). All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <span class="text-emerald-400"><i class="fa-solid fa-lock text-[10px]"></i> SSL Encrypted 256-bit</span>
+                    <span>Wix Commerce Engine Ready</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL & VARIANT MODAL -->
+    <div id="product-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-purple-100 max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+                <h3 id="modal-title" class="font-bold text-slate-900 text-lg">Detail Produk</h3>
+                <button onclick="closeProductModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="p-6 overflow-y-auto custom-scrollbar space-y-6 flex-grow" id="modal-body">
+                <!-- Injected via Javascript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CART MODAL & CHECKOUT WITH 7. QRIS / BANK TRANSFER PAYMENT -->
+    <div id="cart-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-end">
+        <div class="bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between">
+            <!-- Cart Header -->
+            <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-purple-50">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-bag-shopping text-brand-600"></i>
+                    <h3 class="font-bold text-slate-900 text-base">Keranjang Belanja</h3>
+                </div>
+                <button onclick="toggleCartModal()" class="text-slate-400 hover:text-slate-700">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Cart Items List -->
+            <div class="p-5 overflow-y-auto custom-scrollbar flex-grow space-y-4" id="cart-items-container">
+                <p class="text-slate-400 text-xs text-center py-8">Keranjang belanja Anda masih kosong.</p>
+            </div>
+
+            <!-- Cart Footer & Checkout Area -->
+            <div class="p-5 border-t border-slate-100 bg-slate-50 space-y-4">
+                <div class="flex items-center justify-between text-sm font-bold text-slate-900">
+                    <span>Total Pembayaran:</span>
+                    <span id="cart-total-price" class="text-brand-600 text-lg">Rp 0</span>
+                </div>
+
+                <button id="checkout-btn" onclick="openCheckoutModal()" class="w-full py-3.5 rounded-xl anime-gradient text-white font-bold text-sm shadow-md shadow-brand-500/20 disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-lock text-xs mr-2"></i> Lanjut Ke Pembayaran Aman
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAYMENT & CHECKOUT SIMULATION MODAL -->
+    <div id="checkout-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl border border-purple-100 max-h-[90vh] flex flex-col">
+            <div class="bg-slate-900 text-white p-5 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-shield-check text-emerald-400 text-lg"></i>
+                    <div>
+                        <h3 class="font-bold text-sm">Pembayaran Resmi Louiz Studio</h3>
+                        <p class="text-[10px] text-slate-400 font-mono">Salatiga • NIB 9120001234567</p>
+                    </div>
+                </div>
+                <button onclick="closeCheckoutModal()" class="text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-6 overflow-y-auto custom-scrollbar space-y-6">
+                <!-- Ringkasan Order -->
+                <div class="bg-purple-50 p-4 rounded-2xl border border-purple-100 text-xs space-y-2">
+                    <div class="flex justify-between font-bold text-slate-800">
+                        <span>Total Tagihan:</span>
+                        <span id="checkout-total-display" class="text-brand-600 font-extrabold text-sm">Rp 0</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500">Sudah termasuk estimasi pengerjaan akrilik 2-3 hari kerja.</p>
+                </div>
+
+                <!-- Metoda Pembayaran QRIS / REK -->
+                <div>
+                    <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Pilih Metode Pembayaran Aman:</h4>
+                    
+                    <div class="space-y-3">
+                        <!-- QRIS Option -->
+                        <div class="p-4 rounded-2xl border-2 border-brand-500 bg-brand-50/30 relative">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <span class="font-extrabold text-sm text-slate-900">QRIS Resmi (Scan All E-Wallet)</span>
+                                </div>
+                                <span class="bg-emerald-500 text-white text-[10px] px-2 py-0.5 rounded font-bold">Bebas Biaya</span>
+                            </div>
+
+                            <!-- Dummy QRIS SVG Simulator -->
+                            <div class="text-center py-2 bg-white rounded-xl border border-slate-200 p-3">
+                                <div class="w-36 h-36 mx-auto bg-slate-900 p-2 rounded-lg flex items-center justify-center relative">
+                                    <!-- Embedded Inline Simulated QR Code -->
+                                    <svg viewBox="0 0 100 100" class="w-full h-full fill-white">
+                                        <rect x="10" y="10" width="25" height="25"/>
+                                        <rect x="15" y="15" width="15" height="15" fill="#000"/>
+                                        <rect x="65" y="10" width="25" height="25"/>
+                                        <rect x="70" y="15" width="15" height="15" fill="#000"/>
+                                        <rect x="10" y="65" width="25" height="25"/>
+                                        <rect x="15" y="70" width="15" height="15" fill="#000"/>
+                                        <rect x="40" y="40" width="20" height="20"/>
+                                        <rect x="45" y="45" width="10" height="10" fill="#000"/>
+                                        <rect x="65" y="65" width="10" height="10"/>
+                                        <rect x="80" y="80" width="10" height="10"/>
+                                        <rect x="75" y="45" width="15" height="10"/>
+                                        <rect x="45" y="75" width="10" height="15"/>
+                                    </svg>
+                                </div>
+                                <p class="text-[11px] text-slate-600 font-bold mt-2">NMAS: LOUIZ STUDIO KREATIF SALATIGA</p>
+                                <p class="text-[10px] text-slate-400">Scan menggunakan BCA, GoPay, OVO, Dana, LinkAja, ShopeePay</p>
+                            </div>
+                        </div>
+
+                        <!-- Bank Transfer Option -->
+                        <div class="p-4 rounded-2xl border border-slate-200 bg-white space-y-2">
+                            <span class="font-bold text-xs text-slate-900 block">Transfer Bank BCA (Atas Nama Usaha)</span>
+                            <div class="flex items-center justify-between bg-slate-50 p-2.5 rounded-xl font-mono text-xs">
+                                <div>
+                                    <span class="text-slate-400 block text-[10px]">No. Rekening BCA:</span>
+                                    <span class="font-bold text-slate-900">8830-1234-5678</span>
+                                </div>
+                                <button onclick="copyAccountNo('883012345678')" class="text-brand-600 font-sans text-[11px] font-bold hover:underline">
+                                    <i class="fa-regular fa-copy"></i> Salin
+                                </button>
+                            </div>
+                            <p class="text-[10px] text-slate-500">a.n <strong class="text-slate-800">PT LOUIZ STUDIO KREATIF</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Konfirmasi Pesanan Button -->
+                <a id="wa-checkout-link" href="#" target="_blank" class="block w-full py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-center text-sm shadow-lg shadow-emerald-500/30 transition">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Konfirmasi Pembayaran & Desain via WA
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- POLICY MODAL -->
+    <div id="policy-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl border border-purple-100 max-h-[85vh] flex flex-col">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-purple-50">
+                <h3 id="policy-modal-title" class="font-bold text-slate-900 text-base">Kebijakan Toko</h3>
+                <button onclick="closePolicyModal()" class="text-slate-400 hover:text-slate-700">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto custom-scrollbar text-xs text-slate-600 space-y-4 leading-relaxed" id="policy-modal-body">
+                <!-- Content set by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // DATA KATALOG PRODUK KEYCHAIN AKRILIK
+        const products = [
+            {
+                id: 'kc-01',
+                name: 'Custom Chibi Acrylic Keychain 3mm',
+                category: 'Best Seller',
+                price: 18000,
+                stock: 99,
+                estimation: '2-3 Hari Kerja',
+                material: 'Akrilik Bening Grade A 3mm + UV Print 2 Sisi (Sandwich)',
+                contents: '1x Keychain Akrilik, 1x Ring Star/Heart Premium, Packaging Polybag Bening',
+                description: 'Gantungan kunci akrilik custom desain karakter chibi / anime impianmu. Dicetak 2 sisi dengan hasil tajam anti kelupas.',
+                badge: 'Hot Seller',
+                icon: 'fa-user-ninja'
+            },
+            {
+                id: 'kc-02',
+                name: 'Holographic Rainbow Acrylic Keychain',
+                category: 'Special Edition',
+                price: 24000,
+                stock: 45,
+                estimation: '2-3 Hari Kerja',
+                material: 'Akrilik 3mm + Lapisan Efek Hologram Pelangi Shiny',
+                contents: '1x Keychain Hologram Akrilik, 1x Ring Putar Rosegold, Backing Card Custom',
+                description: 'Gantungan kunci akrilik berbalut efek holografik pelangi yang memantulkan cahaya berkilau aesthetic.',
+                badge: 'Aesthetic Choice',
+                icon: 'fa-wand-magic-sparkles'
+            },
+            {
+                id: 'kc-03',
+                name: 'Double-Sided Clear Acrylic Keychain Set',
+                category: 'Standard',
+                price: 15000,
+                stock: 120,
+                estimation: '1-2 Hari Kerja',
+                material: 'Akrilik Transparan 3mm High Quality',
+                contents: '1x Keychain Akrilik Bening, Ring O-Shape Standar Stainless',
+                description: 'Desain minimalis dan bersih. Cocok untuk gantungan kunci logo komunitas, nama, atau ikon favorit.',
+                badge: 'Hemat',
+                icon: 'fa-gem'
+            },
+            {
+                id: 'kc-04',
+                name: 'Glitter Shimmer Acrylic Keychain',
+                category: 'Premium',
+                price: 26000,
+                stock: 30,
+                estimation: '2-3 Hari Kerja',
+                material: 'Akrilik Bening + Serbuk Glitter Emas/Perak Menyatu Dalam Akrilik',
+                contents: '1x Keychain Glitter, Ring Gold Fancy, Bubble Wrap Extra',
+                description: 'Sentuhan efek kilau glitter eksklusif yang tersebar rata di dalam akrilik, memberikan kesan super mewah.',
+                badge: 'Premium',
+                icon: 'fa-star'
+            },
+            {
+                id: 'kc-05',
+                name: 'Charm Standee Akrilik Mini 2-in-1',
+                category: 'Multi-Function',
+                price: 28000,
+                stock: 50,
+                estimation: '3 Hari Kerja',
+                material: 'Akrilik 3mm + Dudukan Standee Mini 2x3cm',
+                contents: '1x Charm Akrilik, 1x Base Standee, 1x Ballchain Warna',
+                description: 'Dapat digunakan sebagai gantungan kunci tas sekaligus pajangan standee mini di meja belajarmu.',
+                badge: 'Favorite',
+                icon: 'fa-shapes'
+            },
+            {
+                id: 'kc-06',
+                name: 'Custom Couple Heart Acrylic Keychain (Pair)',
+                category: 'Couple Package',
+                price: 35000,
+                stock: 25,
+                estimation: '2 Hari Kerja',
+                material: 'Akrilik Bening 3mm (Dua Gantungan Kunci Menyatu saat Ditempel)',
+                contents: '2x Keychain Akrilik (Sepasang), 2x Ring Heart Pink & Blue',
+                description: 'Sepasang gantungan kunci akrilik khusus pasangan atau sahabat yang presisi saling melengkapi.',
+                badge: 'Couple Set',
+                icon: 'fa-heart'
+            }
+        ];
+
+        // CART STATE
+        let cart = [];
+
+        // RENDER PRODUCTS
+        function renderProducts() {
+            const container = document.getElementById('product-grid');
+            container.innerHTML = products.map(p => `
+                <div class="bg-white rounded-3xl overflow-hidden border border-purple-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div class="p-6 relative">
+                        <!-- Product Badge -->
+                        <span class="absolute top-4 right-4 bg-brand-100 text-brand-700 text-[10px] font-extrabold px-3 py-1 rounded-full border border-brand-200">
+                            ${p.badge}
+                        </span>
+
+                        <!-- Product Visual Mockup -->
+                        <div class="w-full h-48 rounded-2xl bg-gradient-to-tr from-purple-100 via-pink-50 to-brand-50 flex items-center justify-center relative mb-6 group-hover:scale-105 transition duration-300">
+                            <div class="w-28 h-28 rounded-2xl bg-white/80 backdrop-blur border-2 border-brand-300/50 flex items-center justify-center shadow-lg relative">
+                                <i class="fa-solid ${p.icon} text-4xl text-brand-500"></i>
+                                <div class="absolute -top-3 w-5 h-5 rounded-full border-2 border-slate-400 bg-slate-100"></div>
+                            </div>
+                        </div>
+
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">${p.category}</span>
+                        <h3 class="font-bold text-slate-900 text-base mb-2 group-hover:text-brand-600 transition">${p.name}</h3>
+                        
+                        <div class="space-y-1 text-xs text-slate-500 mb-4">
+                            <p><i class="fa-solid fa-layer-group text-brand-500 mr-1.5"></i> ${p.material.substring(0, 35)}...</p>
+                            <p><i class="fa-solid fa-clock text-amber-500 mr-1.5"></i> Estimasi: ${p.estimation}</p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-100">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block font-semibold">Harga Satuan</span>
+                                <span class="text-lg font-black text-brand-700">Rp ${p.price.toLocaleString('id-ID')}</span>
+                            </div>
+                            <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-lg">
+                                Stok: ${p.stock} pcs
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-0 grid grid-cols-2 gap-2">
+                        <button onclick="openProductDetail('${p.id}')" class="py-2.5 rounded-xl bg-purple-50 hover:bg-purple-100 text-brand-700 font-bold text-xs transition">
+                            <i class="fa-solid fa-circle-info mr-1"></i> Detail
+                        </button>
+                        <button onclick="addToCart('${p.id}')" class="py-2.5 rounded-xl anime-gradient hover:opacity-95 text-white font-bold text-xs shadow-md shadow-brand-500/20 transition">
+                            <i class="fa-solid fa-plus mr-1"></i> + Keranjang
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // OPEN PRODUCT DETAIL MODAL (Item 5)
+        function openProductDetail(productId) {
+            const p = products.find(prod => prod.id === productId);
+            if (!p) return;
+
+            const modalBody = document.getElementById('modal-body');
+            document.getElementById('modal-title').innerText = p.name;
+
+            modalBody.innerHTML = `
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                    <div class="w-full h-56 rounded-2xl bg-gradient-to-tr from-brand-600 to-pink-500 flex items-center justify-center relative p-4 shadow-md">
+                        <div class="w-32 h-32 rounded-2xl bg-white flex items-center justify-center border-4 border-white/30 shadow-2xl relative">
+                            <i class="fa-solid ${p.icon} text-5xl text-brand-600"></i>
+                            <div class="absolute -top-4 w-6 h-6 rounded-full border-2 border-slate-300 bg-slate-700"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <span class="bg-brand-100 text-brand-700 text-[10px] font-bold px-2.5 py-1 rounded-full">${p.badge}</span>
+                        <h4 class="text-2xl font-black text-brand-700">Rp ${p.price.toLocaleString('id-ID')}</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">${p.description}</p>
+                        
+                        <div class="bg-purple-50/70 p-3.5 rounded-xl space-y-2 text-xs border border-purple-100">
+                            <div><strong class="text-slate-800">Detail Bahan:</strong> <span class="text-slate-600">${p.material}</span></div>
+                            <div><strong class="text-slate-800">Isi Dalam Paket:</strong> <span class="text-slate-600">${p.contents}</span></div>
+                            <div><strong class="text-slate-800">Estimasi Pengerjaan:</strong> <span class="text-brand-600 font-bold">${p.estimation}</span></div>
+                            <div><strong class="text-slate-800">Sisa Stok:</strong> <span class="text-emerald-600 font-bold">${p.stock} pcs tersedia</span></div>
+                        </div>
+
+                        <button onclick="addToCart('${p.id}'); closeProductModal();" class="w-full py-3 rounded-xl anime-gradient text-white font-bold text-xs shadow-md">
+                            Tambahkan Ke Keranjang Belanja
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('product-modal').classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        // CART LOGIC
+        function addToCart(productId) {
+            const itemIndex = cart.findIndex(item => item.id === productId);
+            if (itemIndex > -1) {
+                cart[itemIndex].qty += 1;
+            } else {
+                const prod = products.find(p => p.id === productId);
+                cart.push({ ...prod, qty: 1 });
+            }
+            updateCartUI();
+            toggleCartModal(true);
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartUI();
+        }
+
+        function changeQty(productId, delta) {
+            const item = cart.find(i => i.id === productId);
+            if (item) {
+                item.qty += delta;
+                if (item.qty <= 0) {
+                    removeFromCart(productId);
+                } else {
+                    updateCartUI();
+                }
+            }
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            const badge = document.getElementById('cart-badge');
+            const totalDisplay = document.getElementById('cart-total-price');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            badge.innerText = totalQty;
+            totalDisplay.innerText = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+
+            if (cart.length === 0) {
+                container.innerHTML = `<p class="text-slate-400 text-xs text-center py-12">Keranjang belanja Anda masih kosong.</p>`;
+                checkoutBtn.disabled = true;
+            } else {
+                checkoutBtn.disabled = false;
+                container.innerHTML = cart.map(item => `
+                    <div class="flex items-center justify-between bg-purple-50/50 p-3 rounded-2xl border border-purple-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-bold text-sm">
+                                <i class="fa-solid ${item.icon}"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-slate-800 line-clamp-1">${item.name}</h5>
+                                <span class="text-[11px] text-brand-600 font-semibold">Rp ${item.price.toLocaleString('id-ID')}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button onclick="changeQty('${item.id}', -1)" class="w-6 h-6 rounded-lg bg-slate-200 text-slate-700 text-xs font-bold flex items-center justify-center">-</button>
+                            <span class="text-xs font-bold text-slate-800 px-1">${item.qty}</span>
+                            <button onclick="changeQty('${item.id}', 1)" class="w-6 h-6 rounded-lg bg-slate-200 text-slate-700 text-xs font-bold flex items-center justify-center">+</button>
+                            <button onclick="removeFromCart('${item.id}')" class="text-rose-500 text-xs ml-2 hover:text-rose-700">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function toggleCartModal(forceOpen = false) {
+            const modal = document.getElementById('cart-modal');
+            if (forceOpen) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        // CHECKOUT & PAYMENT MODAL LOGIC (Item 7)
+        function openCheckoutModal() {
+            if (cart.length === 0) return;
+
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            document.getElementById('checkout-total-display').innerText = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+
+            // Generate WhatsApp order format
+            let itemSummary = cart.map(i => `- ${i.name} (${i.qty}x)`).join('%0A');
+            let waText = `Halo%20Louiz%20Studio%20Salatiga,%20saya%20ingin%20memesan%20Keychain%20Akrilik:%0A%0A${itemSummary}%0A%0ATotal%20Tagihan:%20Rp%20${totalPrice.toLocaleString('id-ID')}%0A%0AMetode%20Pembayaran:%20QRIS/Transfer%20Bank%0A%0A(Saya%20siap%20mengirimkan%20file%20desain/gambar)`;
+            
+            document.getElementById('wa-checkout-link').href = `https://wa.me/6281234567890?text=${waText}`;
+
+            toggleCartModal(false);
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function copyAccountNo(accNum) {
+            navigator.clipboard.writeText(accNum);
+            alert('Nomor Rekening BCA berhasil disalin!');
+        }
+
+        // POLICY MODALS (Item 4)
+        const policies = {
+            pengiriman: {
+                title: 'Kebijakan Pengiriman',
+                content: `
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">1. Lokasi Pengiriman</h5>
+                    <p class="mb-3">Seluruh produk keychain akrilik dikirim langsung dari Workshop Louiz Studio yang berlokasi di Kota Salatiga, Jawa Tengah.</p>
+                    
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">2. Ekspedisi Mitram Kami</h5>
+                    <p class="mb-3">Kami bekerjasama dengan kurir resmi J&T Express, JNE, Pos Indonesia, dan SiCepat dengan fasilitas nomor resi yang dapat dilacak online.</p>
+
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">3. Proteksi Packaging</h5>
+                    <p>Semua pesanan dibungkus menggunakan Polybag Bening, Lapisan Bubble Wrap Tebal, dan Kardus Pelindung luar tanpa biaya tambahan untuk menjamin akrilik tiba tanpa tergores/pecah.</p>
+                `
+            },
+            retur: {
+                title: 'Kebijakan Retur & Refund (Garansi 100%)',
+                content: `
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">Syarat Klaim Garansi Retur:</h5>
+                    <ul class="list-disc pl-4 space-y-1 mb-3">
+                        <li>Wajib menyertakan video unboxing utuh tanpa terpotong saat pertama kali membuka paket.</li>
+                        <li>Klaim diterima apabila akrilik patah, gambar salah cetak tidak sesuai konfirmasi desain, atau barang kurang.</li>
+                    </ul>
+                    <h5 class="font-bold text-slate-800 text-sm mb-1">Prosedur Refund:</h5>
+                    <p>Apabila retur disetujui, kami akan mengirimkan akrilik baru secara GRATIS atau mengembalikan uang (refund) 100% via transfer bank dalam 1x24 jam.</p>
+                `
+            },
+            privasi: {
+                title: 'Kebijakan Privasi',
+                content: `
+                    <p class="mb-2">Louiz Studio menghormati privasi dan keamanan data setiap pelanggan:</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li>File gambar/desain milik Anda hanya digunakan untuk kepentingan produksi cetak keychain akrilik pesanan Anda.</li>
+                        <li>Kami tidak akan menjual atau mempublikasikan file karya art milik Anda tanpa izin tertulis.</li>
+                        <li>Data nomor HP dan alamat penerima disimpan dengan sistem terenkripsi aman.</li>
+                    </ul>
+                `
+            },
+            pembayaran: {
+                title: 'Kebijakan Syarat & Pembayaran',
+                content: `
+                    <p class="mb-2">Ketentuan pembayaran resmi di Louiz Studio:</p>
+                    <ul class="list-disc pl-4 space-y-2">
+                        <li>Pemesanan mulai diproses/dicetak setelah pembayaran dikonfirmasi (Lunas atau DP minimal 50% untuk pesanan partai besar).</li>
+                        <li>Pembayaran sah hanya melalui QRIS atas nama <strong>LOUIZ STUDIO KREATIF SALATIGA</strong> atau Rekening Bank BCA 8830-1234-5678.</li>
+                        <li>Estimasi pengerjaan 2-3 hari kerja dihitung sejak konfirmasi pembayaran & file desain disetujui.</li>
+                    </ul>
+                `
+            }
+        };
+
+        function openPolicyModal(type) {
+            const p = policies[type];
+            if (!p) return;
+            document.getElementById('policy-modal-title').innerText = p.title;
+            document.getElementById('policy-modal-body').innerHTML = p.content;
+            document.getElementById('policy-modal').classList.remove('hidden');
+        }
+
+        function closePolicyModal() {
+            document.getElementById('policy-modal').classList.add('hidden');
+        }
+
+        // MOBILE MENU TOGGLE
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // INITIALIZE ON LOAD
+        window.onload = function() {
+            renderProducts();
+            updateCartUI();
+        };
+    </script>
+</body>
+</html>
